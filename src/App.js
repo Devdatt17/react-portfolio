@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import TopNav from './components/TopNav'
+import Project from './components/Project';
+import Landing from './components/Landing'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <TopNav /> 
+    <Landing />     
+    <Project name="Welcome to my projects"/>
+    <Landing/>
+    <Footer />
     </div>
   );
 }
