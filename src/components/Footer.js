@@ -8,9 +8,10 @@ const Footer = () => {
                 <div className="footer-content">
 
                     <div className="cards">
-                        <p> <a href=" "> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="socialmedia"/></a>  <hr/> Github</p>
-                        <p> <a href=" "> <img src="https://icon-library.com/images/instagram-small-icon/instagram-small-icon-12.jpg" alt="socialmedia"/> </a>  <hr/> Instagram</p>
-                        <p> <a href=" "> <img src="https://icons-for-free.com/iconfiles/png/512/social+tweet+twitter+icon-1320192294140475236.png" alt="socialmedia"/> </a> <hr/> Twitter</p>
+                        <p> <a href=" "> <img src="https://www.logo.wine/a/logo/GitHub/GitHub-Icon-White-Dark-Background-Logo.wine.svg" alt="socialmedia"/></a>  <br/> Github</p>
+                        <p> <a href=" "> <img src="https://icon-library.com/images/instagram-small-icon/instagram-small-icon-12.jpg" alt="socialmedia"/> </a> <br/> Instagram</p>
+                        <p> <a href=" "> <img src="https://icons-for-free.com/iconfiles/png/512/social+tweet+twitter+icon-1320192294140475236.png" alt="socialmedia"/> </a> <br/> Twitter</p>
+                        <p> <a href=" "> <img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG38.png" alt="socialmedia"/> </a> <br/> LinkedIn</p>
                     </div>
 
                     <div className="cards cards-nav">
