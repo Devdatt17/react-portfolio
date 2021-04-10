@@ -75,7 +75,7 @@ const Project = ({images=[], interval=3000,name}) => {
                                     <a href=" "><h2> Source Code</h2></a>
                                 </span>
                                 <span>
-                                    <a href=" "><h2>Live</h2></a>
+                                    <a href=" "><h2>Run Live</h2></a>
                                 </span>
 
                             </section>
@@ -90,6 +90,17 @@ const Project = ({images=[], interval=3000,name}) => {
                 <span onClick={previous}> { '<<<' }  </span>
                 <span onClick={next}> {'>>>'} </span>
             </div>
+            <br/>
+            <button type="submit" style={{
+                width:'100%',
+                backgroundImage:'linear-gradient(#f5c9f5,#fcacfc)',
+                height:'60px',
+                borderRadius:"10px",
+                fontSize:'17px',
+                textAlign:"center"
+            }}>
+                <h3>View all projects</h3>
+            </button>
         </section>
         </div>
     )

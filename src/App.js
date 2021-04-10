@@ -3,6 +3,7 @@ import TopNav from './components/TopNav'
 import Project from './components/Project';
 import Landing from './components/Landing'
 import Footer from './components/Footer'
+import Contact from './components/Contact'
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
     ]}
     />
     <Landing/>
+    <Contact />
+    <Landing />
     <Footer />
     </div>
   );
