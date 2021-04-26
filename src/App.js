@@ -4,6 +4,8 @@ import Project from './components/Project';
 import Landing from './components/Landing'
 import Footer from './components/Footer'
 import Contact from './components/Contact'
+import About from './components/About'
+import Resume from './components/Resume'
 
 function App() {
   return (
@@ -26,6 +28,10 @@ function App() {
     ]}
     />
     <Landing/>
+    <Resume/>
+    <Landing/>
+    <About />
+    <Landing />
     <Contact />
     <Landing />
     <Footer />

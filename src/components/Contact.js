@@ -1,56 +1,75 @@
 import React from 'react'
-import DeskImage from '../../src/assets/DeskSide.jpg'
 
 export default function Contact() {
+
+    const [name, setName] = React.useState('');
+    const [email, setEmail] = React.useState('');
+    const [message, setMessage] = React.useState('');
+
+    const handleName = (e) => {
+        setName(e.target.value)
+    }
+
+    const handleEmail = (e) => {
+        setEmail(e.target.value)
+    }
+
+    const handleMessage = (e) => {
+        setMessage(e.target.value)
+    }
+
+
+    const handleSubmit = (e) => {
+        console.log(`Name : ${name}\nEmail : ${email}\nMessage: ${message}`);
+        e.preventDefault();
+    }
+
     return (
-        <div className="main-container" id="contact">
-            <div className="first">
-                <img
-                    src={DeskImage}
-                    alt="contactfrom"
-                />
-            </div>
-            <div className="second">
-                
-                <h1 
-                className="contact-title"
-                style={{ 
-                    textAlign: "center",
-                    color: "black",
-                    fontSize: "50px"
-                }}
-                >
-                    Contact Me
-                </h1>
-                
-                <form>
+        <div className="contact-container" id="contact">
 
-                    <label>Name</label>
+            <div className="left-col"></div>
+
+            <div className="right-col">
+                <h1 className="heading">Contact us</h1>
+                <p></p>
+                <form className="contact-form" method="post" onSubmit={handleSubmit}>
+                    <label>Full name
                     <input
-                        type="text"
-                        id="fname"
-                        name="name"
-                        placeholder="Your name.."
-                    />
-
-                    <label>E-Mail Id</label>
+                            type="text"
+                            className="name"
+                            name="name"
+                            placeholder="Your Full Name"
+                            onChange={handleName}
+                            value={name}
+                            required
+                        />
+                    </label>
+                    <label>Email Address
                     <input
-                        type="text"
-                        id="lname"
-                        name="email"
-                        placeholder="Your email id.."
-                    />
-
-                    <label>Message</label>
+                            type="email"
+                            className="email"
+                            name="email"
+                            placeholder="Your Email Address"
+                            onChange={handleEmail}
+                            value={email}
+                            required
+                        />
+                    </label>
+                    <label>Message
                     <textarea
-                        id="subject"
-                        name="subject"
-                        placeholder="Write something.."
-                    ></textarea>
-
-                    <input type="submit" value="Submit" />
+                            rows="6"
+                            placeholder="Your Message"
+                            className="message"
+                            name="message"
+                            onChange={handleMessage}
+                            value={message}
+                            required>
+                        </textarea>
+                    </label>
+                    <button type="submit" className="submit" name="submit">Send</button>
                 </form>
             </div>
         </div>
+
     )
 }
