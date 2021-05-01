@@ -14,26 +14,35 @@ function App() {
     <Landing 
     firstValue="Hello, My Name is Devdatt Pandit"
     secondValue="And I am a Web Developer."
+    height="100"
     />
     <Project 
     name="Welcome to my projects"
     interval={20000}
     images={[
-      'https://i.pinimg.com/originals/3b/8a/d2/3b8ad2c7b1be2caf24321c852103598a.jpg',
-      'https://cdn.wallpaperhub.app/cloudcache/1/b/5/8/e/f/1b58ef6e3d36a42e01992accf5c52d6eea244353.jpg',
-      'https://img.freepik.com/free-vector/dark-paper-layers-wallpaper-with-golden-details_23-2148403401.jpg?size=626&ext=jpg',
-      'https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__340.jpg',
-      'https://download.asrock.com/Wallpaper/2020_Wallpaper_AQUA-logo_4096x2160.jpg',
-      'https://c4.wallpaperflare.com/wallpaper/500/442/354/outrun-vaporwave-hd-wallpaper-thumb.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg',
+      'https://scx2.b-cdn.net/gfx/news/2019/2-nature.jpg',
+      'https://images.unsplash.com/photo-1615118265620-d8decf628275?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlJTIwbGFuZHNjYXBlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',
+      'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',
+      'https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',
+      'https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHByb2dyYW1tZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80',
     ]}
     />
-    <Landing/>
+    <Landing 
+    height="60"
+    />
     <Resume/>
-    <Landing/>
+    <Landing 
+    height="20"
+    />
     <About />
-    <Landing />
-    <Contact />
-    <Landing />
+    <Landing 
+    height="20"
+    />
+    <Contact/>
+    <Landing     
+    height="60"
+    />
     <Footer />
     </div>
   );

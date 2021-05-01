@@ -30,43 +30,42 @@ export default function Contact() {
             <div className="left-col"></div>
 
             <div className="right-col">
-                <h1 className="heading">Contact us</h1>
-                <p></p>
                 <form className="contact-form" method="post" onSubmit={handleSubmit}>
-                    <label>Full name
-                    <input
+                    <h1 className="heading">Contact Me</h1>
+                    <label>
+                        <input
                             type="text"
                             className="name"
                             name="name"
-                            placeholder="Your Full Name"
+                            placeholder="Enter Name"
                             onChange={handleName}
                             value={name}
                             required
                         />
                     </label>
-                    <label>Email Address
-                    <input
+                    <label>
+                        <input
                             type="email"
                             className="email"
                             name="email"
-                            placeholder="Your Email Address"
+                            placeholder="Email Address"
                             onChange={handleEmail}
                             value={email}
                             required
                         />
                     </label>
-                    <label>Message
-                    <textarea
+                    <label>
+                        <textarea
                             rows="6"
                             placeholder="Your Message"
                             className="message"
                             name="message"
                             onChange={handleMessage}
                             value={message}
-                            required>
+                        >
                         </textarea>
                     </label>
-                    <button type="submit" className="submit" name="submit">Send</button>
+                    <button type="submit" className="submit" name="submit">Submit</button>
                 </form>
             </div>
         </div>
