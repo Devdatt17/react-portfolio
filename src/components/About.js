@@ -5,18 +5,18 @@ const About = () => {
     <div className="bg-container">
 
       <div className="about-container">
-        <img
-          className="first-image"
-          src="https://i.pinimg.com/originals/32/38/6c/32386c72c7f2a8b5c1a10fc51c149cb1.jpg"
-          alt="about"
-        />
+        <div className="about-image"></div>
 
         <div className="intro">
           <h1>About Me</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id est ea, dolores, provident illo animi nostrum accusamus iste quidem expedita magni deleniti qui nam eum quibusdam. Ipsam repudiandae a minima.
+            I am a web developer, a freelancer and an UI/UX enthusiast. I love to build complex and beautiful websites and softwares.
             <br />
-            Quidem molestias, praesentium perspiciatis distinctio iste libero eaque vero ducimus consequuntur odit quia quam explicabo totam eveniet ipsa aliquam? Ullam magnam iusto vitae autem harum quaerat sit ex necessitatibus totam!
+            Along with the strong coding and intuitive problem-solving skills, I also have skills ranging from the domain of Web development to App development.
+            <br />
+            If you want to build beautiful websites or work with me.
+            <br />
+            Feel free to contact me. 
           </p>
         </div>
       </div>

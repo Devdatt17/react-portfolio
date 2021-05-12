@@ -17,7 +17,7 @@ function App() {
     height="100"
     />
     <Project 
-    name="Welcome to my projects"
+    name="Projects I have worked on"
     interval={20000}
     images={[
       'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Shaqi_jrvej.jpg/1200px-Shaqi_jrvej.jpg',

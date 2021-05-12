@@ -235,9 +235,237 @@ li {
 /*? Resume component*/
 
 .resume-container {
-    height: 100vh;
+    display: flex;
     padding: 20px;
     background: linear-gradient(124deg, black, rgb(65, 63, 63));
+    color: white;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.resume-container>h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+.resume-doc {
+    padding: 20px;
+    width: 80%;
+    background-color: white;
+    color: black;
+}
+
+.resume-header {
+    display: flex;
+    flex-direction: row;
+    background: rgb(36, 36, 85);
+    padding: 10px;
+    height: 50vh;
+    color: white;
+}
+
+.resume-image {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    background-image: url('./assets/DP.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 320px;
+    border-radius: 20px;
+}
+
+.resume-description {
+    padding-left: 20px;
+}
+
+.resume-description>h1 {
+    text-align: right;
+    font-size: 60px;
+}
+
+.resume-description>p {
+    text-align: right;
+    font-size: 20px;
+}
+
+.resume-main {
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    padding-top: 40px;
+    border: 5px solid rgb(36, 36, 85);
+}
+
+.skills-section {
+    width: 60%;
+    height: 10%;
+    /* removing it causes problem */
+    text-align: center;
+    align-items: flex-end;
+    background: rgb(36, 36, 85);
+    ;
+    color: white;
+}
+
+.certificate-section {
+    width: 100%;
+}
+
+.skills-section,
+.certificate-section {
+    padding: 20px;
+}
+
+.resume-project-intro {
+    font-size: 20px;
+}
+
+.certificate-about {
+    text-align: center;
+    font-size: 18px;
+}
+
+.skills-section>div>div {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills {
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.charts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 30%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.charts {
+    width: 100%;
+    padding: 30px;
+}
+
+.charts>div {
+    display: flex;
+    flex-direction: row;
+    height: 29px;
+}
+
+.bar {
+    height: 100%;
+    background: white;
+}
+
+.darkbar {
+    height: 100%;
+    background: black;
+}
+
+.b1 {
+    width: 60%;
+}
+
+.d1 {
+    width: 40%;
+}
+
+.b2 {
+    width: 50%;
+}
+
+.d2 {
+    width: 50%;
+}
+
+.b3 {
+    width: 70%;
+}
+
+.d3 {
+    width: 30%;
+}
+
+.b4 {
+    width: 80%;
+}
+
+.d4 {
+    width: 20%;
+}
+
+.b5 {
+    width: 85%;
+}
+
+.d5 {
+    width: 15%;
+}
+
+.b6 {
+    width: 70%;
+}
+
+.d6 {
+    width: 30%;
+}
+
+.b7 {
+    width: 40%;
+}
+
+.d7 {
+    width: 60%;
+}
+
+.b8 {
+    width: 50%;
+}
+
+.d8 {
+    width: 50%;
+}
+
+.b9 {
+    width: 85%;
+}
+
+.d9 {
+    width: 15%;
+}
+
+.b10 {
+    width: 45%;
+}
+
+.d10 {
+    width: 55%;
+}
+
+.b11 {
+    width: 80%;
+}
+
+.d11 {
+    width: 20%;
+}
+
+.b12 {
+    width: 85%;
+}
+
+.d12 {
+    width: 15%;
 }
 
 
@@ -341,19 +569,28 @@ li {
     border-radius: 10px;
 }
 
-.about-container>img {
+.about-container>.about-image {
+    background-image: url('./assets/DP.jpg');
+    background-size: cover;
     box-shadow: 10px 5px 10px rgb(114, 113, 113);
-    width: 60vh;
-    height: 60vh;
-    border-radius: 60vh;
+    width: 33%;
+    height: 55vh;
+    border-radius: 70vh;
 }
 
 .intro {
-    padding: 20px;
+    width: 68%;
+    padding: 20px 10px 10px 50px;
 }
 
 .intro>p>h1 {
     font-size: 40px;
+    text-align: center;
+}
+
+.intro>p {
+    font-size: 20px;
+    text-align: left;
 }
 
 
@@ -508,7 +745,7 @@ li {
         flex-direction: column;
         height: 100%;
     }
-    .about-container>img {
+    .about-container>.about-image {
         width: 60%;
         height: 60%;
         border-radius: 0px;
@@ -597,7 +834,7 @@ li {
         flex-direction: column;
         height: 100%;
     }
-    .about-container>img {
+    .about-container>.about-image {
         width: 60%;
         height: 60%;
         border-radius: 0px;
@@ -723,7 +960,7 @@ li {
         flex-direction: column;
         height: 100%;
     }
-    .about-container>img {
+    .about-container>.about-image {
         width: 100%;
         height: 60%;
         border-radius: 0px;
