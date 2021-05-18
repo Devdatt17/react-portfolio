@@ -169,6 +169,9 @@ const Resume = () => {
 
                 </div>
             </div>
+            <div className="resume-button">
+                <button type="submit">Get this resume in the PDF format</button>
+            </div>
         </div>
     )
 }
